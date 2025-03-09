@@ -12,14 +12,23 @@
       background-repeat: no-repeat;
       background-position: center;
       
-      /* Center content */
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh; /* Makes the body fill the browser window's height */
+      height: 100vh;
     }
     form {
-      text-align: center; /* Centers items inside the form */
+      text-align: center;
+    }
+    input[type="image"] {
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+    input[type="image"]:hover {
+      transform: scale(1.1);
+    }
+    input[type="image"]:active {
+      transform: scale(1.05);
     }
   </style>
 </head>
